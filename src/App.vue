@@ -15,7 +15,14 @@ export default {
   },
   methods:{
     onTermChange(searchTerm){
-      axios.get('https://googleapis.com/youtube/v3/search')
+      axios.get('https://googleapis.com/youtube/v3/search',{
+        params: {
+          keY: API_KEY,
+          type: 'video',
+          part: 'snippet',
+          q:searchTerm
+        }
+      })
     }
   }
 };
