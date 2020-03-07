@@ -5,6 +5,8 @@
 </template>
 <script>
 import SearchBar from "./components/SearchBar";
+const API_KEY = 'API_KEY_HERE';
+
 export default {
   name: "App",
   components: {
