@@ -29,7 +29,9 @@ export default {
           part: 'snippet',
           q: searchTerm
         }
-      }).then(response => console.log(response));
+      }).then(response => {
+        this.videos = response.data.items;
+      });
     }
   }
 };
