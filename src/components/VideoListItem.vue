@@ -1,7 +1,9 @@
 <template>
-    <li class="list-group-item">
-        <img :src="thumbnailUrl" />
-        {{video.snippet.title}}
+    <li class="list-group-item media">
+        <img :src="thumbnailUrl" class="mr-3" />
+        <div class="media-body">
+            {{video.snippet.title}}
+        </div>
     </li>
 </template>
 <script>
