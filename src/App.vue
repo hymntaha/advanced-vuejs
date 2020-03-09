@@ -17,6 +17,9 @@ export default {
     SearchBar,
     VideoList
   },
+  data(){
+    return { videos:[]};
+  },
   methods:{
     onTermChange(searchTerm){
       axios.get('https://www.googleapis.com/youtube/v3/search', {
