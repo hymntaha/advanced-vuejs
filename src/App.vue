@@ -1,7 +1,8 @@
 <template>
   <div>
     <SearchBar @termChange="onTermChange"> </SearchBar>
-    <VideoList/>
+    <VideoList :videos="videos"/>
+
   </div>
 </template>
 <script>
