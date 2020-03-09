@@ -1,6 +1,6 @@
 <template>
     <ul>
-        VideoList
+        <VideoListItem v-for="video in videos" />
     </ul>
 </template>
 <script>
