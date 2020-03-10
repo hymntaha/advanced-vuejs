@@ -17,3 +17,12 @@
       }
     }
 </script>
+<style>
+    li{
+        display: flex;
+        cursor:pointer;
+    }
+    li:hover{
+        background-color: #eee;
+    }
+</style>
