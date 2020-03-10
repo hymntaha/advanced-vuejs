@@ -1,6 +1,6 @@
 <template>
-    <div>
-        Video Detail!
+    <div v-if="video">
+        {{video.snippet.title}}
     </div>
 </template>
 <script>
